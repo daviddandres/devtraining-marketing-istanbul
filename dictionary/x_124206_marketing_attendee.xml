@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Attendee" max_length="40" name="x_124206_marketing_attendee" type="collection">
+        <element display="true" label="Email" mandatory="true" max_length="40" name="email" type="string"/>
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element label="Marketing Event" mandatory="true" max_length="32" name="marketing_event" reference="x_124206_marketing_marketing_event" type="reference"/>
+        <element label="Phone" max_length="40" name="phone" type="string"/>
+        <index name="index">
+            <element name="marketing_event"/>
+        </index>
+    </element>
+</database>

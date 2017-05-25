@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_124206_marketing.attendee.deleted</event_name>
+        <name>Remove attendee</name>
+        <order>100</order>
+        <script><![CDATA[(function removeAttendees() {
+//Get marketing event from event
+var mrkevent = new GlideRecord('x_124206_marketing_marketing_event');
+mrkevent.get(event.parm1);
+//Count attendees for marketing event
+var numOfAttendees = 0;
+var attendees = new GlideAggregate('x_124206_marketing_attendee');
+attendees.addQuery('marketing_event', event.parm1);
+attendees.addAggregate('COUNT');
+attendees.query();
+if(attendees.next())
+	numOfAttendees = attendees.getAggregate('COUNT');
+//Set attendees registered field
+mrkevent.number_of_attendees_registered = numOfAttendees;
+mrkevent.update();
+}());]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-25 15:11:09</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7b2251c84f833200d2a7cab18110c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remove attendee</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sysevent_script_action_7b2251c84f833200d2a7cab18110c72f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-25 15:11:09</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

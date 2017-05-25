@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="last_name" label="Last name" language="en" table="x_124206_marketing_attendee">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <help/>
+            <hint/>
+            <label>Last name</label>
+            <language>en</language>
+            <name>x_124206_marketing_attendee</name>
+            <plural>Last names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-05-25 14:31:56</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>9c79c1c44f833200d2a7cab18110c74b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Last name</sys_name>
+            <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+            <sys_update_name>sys_documentation_x_124206_marketing_attendee_last_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-05-25 14:31:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

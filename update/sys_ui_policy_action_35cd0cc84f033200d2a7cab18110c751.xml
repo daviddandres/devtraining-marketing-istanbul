@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>needed_from</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-25 10:11:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>35cd0cc84f033200d2a7cab18110c751</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>needed_from</sys_name>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sys_ui_policy_action_35cd0cc84f033200d2a7cab18110c751</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-25 10:11:43</sys_updated_on>
+        <table>x_124206_marketing_equipment_request</table>
+        <ui_policy display_value="Hide mandatory 'Needed' fields until a marketing event is selecte">747d48c84f033200d2a7cab18110c77c</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>
