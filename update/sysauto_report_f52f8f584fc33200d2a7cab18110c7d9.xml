@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_report">
+    <sysauto_report action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <address_list/>
+        <condition/>
+        <conditional>false</conditional>
+        <group_list name="Equipment Request Approvers &gt; $500">220f8e71c61122840197e57c33464f70</group_list>
+        <include_detail>false</include_detail>
+        <include_with/>
+        <name>Scheduled Execution of Marketing Events Budgey by City</name>
+        <omit_if_no_records>false</omit_if_no_records>
+        <output_type>PDF-landscape</output_type>
+        <report display_value="Marketing Events Budgey by City">78fc43184fc33200d2a7cab18110c789</report>
+        <report_body/>
+        <report_title/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>2</run_dayofweek>
+        <run_period/>
+        <run_start>2017-05-26 18:54:36</run_start>
+        <run_time>1969-12-31 23:00:00</run_time>
+        <run_type>weekly</run_type>
+        <sys_class_name>sysauto_report</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-26 18:55:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f52f8f584fc33200d2a7cab18110c7d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled Execution of Marketing Events Budgey by City</sys_name>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sysauto_report_f52f8f584fc33200d2a7cab18110c7d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-26 18:55:43</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+        <user_list/>
+        <zip>false</zip>
+    </sysauto_report>
+</record_update>
