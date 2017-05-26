@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_124206_marketing_AttendeeForm.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<style type="text/css">
+body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+p, h1, form, button{border:0;
+margin:0; padding:0;}
+.spacer{clear:both;
+height:1px;}
+/* ----------- My Form ----------- */
+.myform{
+margin:0 auto;
+width:400px;
+padding:14px;
+}
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1{
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px
+#b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+#stylized button{
+clear:both;
+margin-left:150px;
+width:125px;
+height:31px;
+background:#666666
+url(img/button.png) norepeat;
+text-align:center;
+line-height:31px;
+color:#000000;
+font-size:11px;
+font-weight:bold;
+}
+</style>
+<div id="stylized" class="myform">
+<g:ui_form id="form" name="form">
+<h1>Sign-up form</h1>
+<p>Please sign up here for an fun and informative session</p>
+<label>First Name<span class="small">First Name</span>
+</label>
+<input type="text" name="fname" id="fname" />
+<label>Last Name<span class="small">Last Name</span>
+</label>
+<input type="text" name="lname" id="lname" />
+<label>Email<span class="small">Add a valid address</span>
+</label>
+<input type="text" name="email" id="email" />
+<label>Phone<span class="small">Your Phone Number</span>
+</label>
+<input type="text" name="phone" id="phone" />
+<button type="submit">Sign-up</button>
+<div class="spacer"></div>
+</g:ui_form>
+</div>
+</j:jelly>]]></html>
+        <name>AttendeeForm</name>
+        <processing_script><![CDATA[var attendee = new GlideRecord("x_124206_marketing_attendee");
+attendee.first_name = fname;
+attendee.last_name = lname;
+attendee.email = email;
+attendee.phone = phone;
+attendee.marketing_event = "25c369544f033200d2a7cab18110c707"; //HARDCODED
+attendee.insert();]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-26 17:29:09</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>45ea3e9c4f833200d2a7cab18110c7f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AttendeeForm</sys_name>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sys_ui_page_45ea3e9c4f833200d2a7cab18110c7f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-26 17:32:00</sys_updated_on>
+    </sys_ui_page>
+</record_update>
