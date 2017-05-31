@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_124206_marketing_attendee</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Attendee Prospected</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	
+			// Add your code here
+	var saleProspected = new GlideRecord('x_124206_marketing_sales_prospect');
+saleProspected.addQuery('email', current.email);
+saleProspected.query();
+if(!saleProspected.next()){
+
+	try { 
+ var r = new sn_ws.RESTMessageV2('x_124206_marketing.Synch Sales Prospects', 'Default POST');
+ r.setStringParameterNoEscape('company', 'League of Extraordinary Gentlemen');
+ r.setStringParameterNoEscape('phone', current.phone);
+ r.setStringParameterNoEscape('email', current.email);
+ r.setStringParameterNoEscape('region', 'EMEA');
+ r.setStringParameterNoEscape('name', current.first_name);
+
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthentication(authentication type, profile name);
+ //r.setAuthentication('basic', 'test');
+ var response = r.execute();
+ var responseBody = response.getBody();
+ var httpStatus = response.getStatusCode();
+	
+}
+catch(ex) {
+ var message = ex.getMessage();
+}
+}
+	
+
+               
+        	
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-30 12:20:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a81956e94fc73200d2a7cab18110c772</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Attendee Prospected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sys_script_a81956e94fc73200d2a7cab18110c772</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-30 16:07:43</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a81956e94fc73200d2a7cab18110c772"/>
+</record_update>

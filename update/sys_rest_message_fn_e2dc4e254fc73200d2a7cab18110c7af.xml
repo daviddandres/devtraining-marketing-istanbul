@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="test">111b42254fc73200d2a7cab18110c74d</basic_auth_profile>
+        <basic_auth_user/>
+        <content>{&#13;
+"name":"${name}", &#13;
+"company":"${company}", &#13;
+"email":"${email}", &#13;
+"phone":"${phone}",&#13;
+"region":"${region}"&#13;
+}</content>
+        <function_name>Default POST</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Synch Sales Prospects [ Default POST ]</qualified_name>
+        <rest_endpoint>https://dev27401.service-now.com/api/now/import/x_124206_marketing_add_sales_prospect</rest_endpoint>
+        <rest_message display_value="Synch Sales Prospects">d4ba4ee14fc73200d2a7cab18110c7bf</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-30 11:18:18</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e2dc4e254fc73200d2a7cab18110c7af</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Default POST</sys_name>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sys_rest_message_fn_e2dc4e254fc73200d2a7cab18110c7af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-30 13:43:33</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

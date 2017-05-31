@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Legacy Attendees">ecca35e94f873200d2a7cab18110c760</map>
+        <order>100</order>
+        <script><![CDATA[	//Convert source field to string
+(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+    var name = source.u_name.toString();
+//Split names anywhere there is a space
+    var split_names = name.split (" ");
+//Find the number of names
+    var num_names = split_names.length;
+//If there is only one name map it to the last name
+        if (num_names == 1) {
+     target.last_name = split_names[0];
+}
+//if there are two names map to first and last name
+        if (num_names == 2) {
+    target.first_name = split_names[0];
+    target.last_name = split_names[1];
+}
+//if there are more than 3 names combine into one middle name
+        if (num_names >= 3) {
+    target.first_name = split_names.shift();
+    target.last_name = split_names.pop();
+        var middle_name = split_names.join(" ");
+}})(source, map, log, target);
+]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-30 10:05:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a7fb312d4f873200d2a7cab18110c790</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sys_transform_script_a7fb312d4f873200d2a7cab18110c790</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-30 10:07:46</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>

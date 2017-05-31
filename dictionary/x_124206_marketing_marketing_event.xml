@@ -24,5 +24,8 @@
         <index name="index">
             <element name="event_coordinator"/>
         </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
     </element>
 </database>

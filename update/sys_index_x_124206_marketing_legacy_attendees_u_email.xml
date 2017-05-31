@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>u_email</col_name_string>
+        <index_col_name element="u_email" name="x_124206_marketing_legacy_attendees">6eba75e94f873200d2a7cab18110c78a</index_col_name>
+        <logical_table_name>x_124206_marketing_legacy_attendees</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-30 11:00:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0a09c6a14fc73200d2a7cab18110c7ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_124206_marketing_legacy_attendees</sys_name>
+        <sys_package display_value="Marketing Events Application" source="x_124206_marketing">bfabbb334f323200d2a7cab18110c72d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Marketing Events Application">bfabbb334f323200d2a7cab18110c72d</sys_scope>
+        <sys_update_name>sys_index_x_124206_marketing_legacy_attendees_u_email</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-30 11:00:39</sys_updated_on>
+        <table display_value="Legacy Attendees" name="x_124206_marketing_legacy_attendees">e2ba75e94f873200d2a7cab18110c782</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Legacy Attendees" max_length="40" name="x_124206_marketing_legacy_attendees" type="collection">
+        <element attributes="import_attribute_name=Company,edge_encryption_enabled=true" label="Company" max_length="40" name="u_company" type="string"/>
+        <element attributes="import_attribute_name=Email,edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" type="string"/>
+        <element attributes="import_attribute_name=Event,edge_encryption_enabled=true" label="Event" max_length="40" name="u_event" type="string"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <index name="index">
+            <element name="u_email"/>
+        </index>
+    </element>
+</database>

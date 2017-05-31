@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Add Attendees" max_length="40" name="x_124206_marketing_add_attendees" type="collection">
+        <element attributes="import_attribute_name=u_company,edge_encryption_enabled=true" label="Company" max_length="40" name="u_company" type="string"/>
+        <element attributes="import_attribute_name=u_email,edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" type="string"/>
+        <element attributes="import_attribute_name=u_event,edge_encryption_enabled=true" label="Event" max_length="40" name="u_event" type="string"/>
+        <element attributes="import_attribute_name=u_name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+    </element>
+</database>
